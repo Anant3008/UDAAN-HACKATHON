@@ -2,38 +2,95 @@
 *{
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
     font-family: Fredoka;
-    justify-content: center;
-    background-image: url("wallpaperflare.com_wallpaper\(5\).jpg");
     background-size: cover;
+    color: white;    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: url("wallpaperflare.com_wallpaper\ \(4\).jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    background-color: transparent;
+    border: 2px solid rgb(230, 171, 171);
+    padding: 30px 40px;
+    width: 400px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.9);
+}
+
+.wrapper h2{
+    font-size: 39px;
+    text-align: center;
+}
+
+.input-box{
+    text-align: center;
+    margin-top: 30px;
+}
+.input-box input{
+    height: 35px;
+    width: 100%;
+    border-radius: 45px;
+    background: transparent;
+    border: 2px solid violet;
+    background-color: transparent;
+    outline: 0px;
+    font-size: 15px;
+    padding: 5px 25px;
+}
+
+.input-box input::placeholder{
     color: white;
-    
-    
+    text-align: center;
+    font-size: 15px;
 }
 
-.login{
+.rem-for{
     display: flex;
-    
-    
-    padding-top: 200px;
-    
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px;
 }
 
-.details1{
-    display: flex;
-    
-    padding-top: 15px;
-}
-.details2{
-    display: flex;
-    padding-top: 15px;
+.rem-for label input{
+    accent-color: white;
+    margin-right: 5px;
 }
 
-.details3{
-    display: flex;
-    padding-top: 15px;
-    
-    
+.rem-for a{
+    text-decoration: none;
 }
 
+.rem-for a:hover{
+    text-decoration: underline;
+}
 
+.submit{
+    width: 100%;
+    border-radius: 45px;
+    height: 35px;
+    border: 2px solid violet;
+    color: white;
+    background-color: transparent;
+}
+.reg-link{
+    text-align: center;
+    margin-top: 12px;
+}
+.reg-link a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.reg-link a:hover{
+    text-decoration: underline;
+}
